@@ -31,9 +31,12 @@ a{
 }
 
 .container{
-  width:min(1180px,92%);
+  width:min(1320px,100%);
+  padding-inline:80px;
   margin:auto;
 }
+
+
 
 /* =========================================================
 VARIABLES
@@ -201,15 +204,7 @@ HERO
 /* FOTO */
 
 .hero-photo{
-
-  position:absolute;
-
-  top:0;
-  right:0;
-
-  width:48%;
-  height:100%;
-
+  width:44%;
 }
 
 .photo-frame{
@@ -243,8 +238,8 @@ HERO
   linear-gradient(
     90deg,
     #050816 0%,
-    rgba(5,8,22,.94) 18%,
-    rgba(5,8,22,.65) 38%,
+    rgba(5,8,22,.96) 24%,
+    rgba(5,8,22,.72) 42%,
     rgba(5,8,22,.1) 68%,
     rgba(5,8,22,0) 100%
   );
@@ -263,11 +258,9 @@ HERO
 }
 
 .hero-text{
-
-  width:min(650px,100%);
-
+  width:min(720px,100%);
   padding-top:40px;
-
+  padding-left:20px;
 }
 
 .eyebrow{
@@ -855,6 +848,18 @@ RESPONSIVO
   .hero h1{
 
     line-height:.96;
+
+  }
+
+  @media(max-width:980px){
+
+  .container{
+    padding-inline:24px;
+  }
+
+  .hero-text{
+    padding-left:0;
+  }
 
   }
 
